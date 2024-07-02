@@ -1,89 +1,57 @@
-# Frontend Mentor - IP address tracker solution
+# IP Address Tracker Solution 🌐 🤖
 
-This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+As part of a challenge from Frontend Mentor, this project aims to track IP addresses around the world and show them on a map. Take a look and discover your IP address. 🚀
 
 ## Overview
 
-### The challenge
+### The Challenge
 
 Users should be able to:
 
-- View the optimal layout for each page depending on their device's screen size
-- See hover states for all interactive elements on the page
-- See their own IP address on the map on the initial page load
-- Search for any IP addresses or domains and see the key information and location
+- View the optimal layout for each page depending on their device's screen size 🖥️ 📱
+- See hover states for all interactive elements on the page :electron:
+- See their own IP address on the map on the initial page load 🗺️
+- Search for any IP addresses or domains and see the key information and location 🔎
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+<img width="704" alt="image" src="https://github.com/bruno-corso/ip-address-tracker/assets/110792462/720f28b0-5ced-45c8-8261-376860445ba3">
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Challenge URL](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0)
+- [Live Site URL](https://ip-address-tracker-five-zeta.vercel.app/)
 
-## My process
+## My Process
 
-### Built with
+### Built With
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [IPify (API IPs)](https://www.ipify.org/)
+- [Leaflet (Map)](https://leafletjs.com/)
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
-### What I learned
+### What I Learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+During this project, I learned how to integrate various technologies to build a functional and visually appealing IP address tracker. Some key learnings include:
 
-To see how you can add code snippets, see below:
+- Implementing responsive design using Tailwind CSS
+- Using TypeScript for type safety and improved developer experience in a React project
+- Fetching and displaying data from an API to show IP address information on a map
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+Here's an example of some code I'm proud of:
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+tsx
+// Example TypeScript code
+const fetchIpDetails = async (ip: string) => {
+  const response = await fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=YOUR_API_KEY&ip=${ip}`);
+  const data = await response.json();
+  console.log(data);
+};
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
