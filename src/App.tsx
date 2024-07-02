@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import InputBusca from './Components/InputBusca';
 import Mapa from './Components/Mapa';
 import PainelInfo from './Components/PainelInfo';
@@ -21,6 +21,21 @@ function App() {
     isp: '-'
   });
 
+  useEffect(() => {
+    const buscaIP = async () => {
+      try {
+        const endpoint = "https://api.ipify.org?format=json"
+        const response = await axios.get(endpoint);
+        setDominio(response.data.ip)
+        handleButtonClick()
+      }
+      catch (error) {
+        console.log(error);
+
+      }
+    }
+    buscaIP()
+  }, []);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setDominio(event.target.value);
@@ -67,7 +82,7 @@ function App() {
           isp: response.data.isp
         }
         setPainelValues(values)
-        
+
       } catch (error) {
         console.log('Error fetching IP geolocation:', error);
       }
