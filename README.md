@@ -2,6 +2,8 @@
 
 As part of a challenge from Frontend Mentor, this project aims to track IP addresses around the world and show them on a map. Take a look and discover your IP address. 🚀
 
+<img alt="Code" width=200 src="https://media.tenor.com/nCaqDCZtDPYAAAAM/i-have-your-ip-i-have-your-location.gif" />
+
 ## Overview
 
 ### The Challenge
@@ -35,47 +37,16 @@ Users should be able to:
 
 
 ### What I Learned
+<img alt="Coder GIF" width=200 src="https://cdn.dribbble.com/users/1187836/screenshots/6539429/programer.gif" />
 
-During this project, I learned how to integrate various technologies to build a functional and visually appealing IP address tracker. Some key learnings include:
+During this project, I've worked on:
 
-- Implementing responsive design using Tailwind CSS
-- Using TypeScript for type safety and improved developer experience in a React project
-- Fetching and displaying data from an API to show IP address information on a map
+- Using TailwindCSS for stilying my components;<br>
+- Implementing IPIfy API's response at Leaflet Map;<br>
+- Creating some types that make my code more safe and robust;<br> 
 
-Here's an example of some code I'm proud of:
+### Try it!
 
-tsx
-// Example TypeScript code
-const fetchIpDetails = async (ip: string) => {
-  const response = await fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=YOUR_API_KEY&ip=${ip}`);
-  const data = await response.json();
-  console.log(data);
-};
+Access the link and search for some IPs!
 
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+<img alt="Code" width=200 src="https://www.icegif.com/wp-content/uploads/2023/05/icegif-567.gif" />
