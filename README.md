@@ -39,11 +39,11 @@ Users should be able to:
 ### What I Learned
 <img alt="Coder GIF" width=200 src="https://cdn.dribbble.com/users/1187836/screenshots/6539429/programer.gif" />
 
-During this project, I've worked on:
+During this project, I have worked on:
 
-- Using TailwindCSS for stilying my components;<br>
-- Implementing IPIfy API's response at Leaflet Map;<br>
-- Creating some types that make my code more safe and robust;<br> 
+- Using TailwindCSS to style my components;<br>
+- Implementing IPIfy API's response in a Leaflet Map;<br>
+- Creating types to make my code safer and more robust;<br> 
 
 ### Try it!
 
